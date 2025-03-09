@@ -1,0 +1,28 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form>
+        <h1>Temp convert </h1>
+        <input type="number" value="1" id="text_box"> <br>
+
+        <input type="radio" name="Unit" id="to_F">
+        <label for="to_F"> c to f</label> <br>
+
+        <input type="radio" name="Unit" id="to_C">
+        <label for="to_C"> f to c</label>
+        <br>
+        <button type="button" onclick="convert()"> Convert</button>
+        <p id="result"></p>
+    </form>
+    <script src="index.js">
+    </script>
+</body>
+
+</html>
