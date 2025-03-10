@@ -10,14 +10,14 @@ function convert() {
     if (to_F.checked) {
         temp = Number(text_box.value);
         temp = temp * 9 / 5 + 32;
-        result.textContent = temp + 'F';
+        result.textContent = temp.toFixed(1) + ' °F';
         // result.textContent = 'to F';
     }
     else if (to_C.checked) {
         // result.textContent = 'to C';
         temp = Number(text_box.value);
         temp = (temp - 32) * (5 / 9);
-        result.textContent = temp + 'C'
+        result.textContent = temp.toFixed(1) + ' °C'
     }
 
     else {
